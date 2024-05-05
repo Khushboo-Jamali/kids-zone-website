@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #may-vi {
+      width: 100%;
+    }
+    .card-one {
+      animation: slide 15s infinite;
+      height: 60vh;
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+      transition: 3s;
+    }
+    @keyframes slide {
+      0% {
+        background-color: darkorange;
+      }
+      10% {
+        background-color: darkcyan;
+      }
+      30% {
+        background-color: lightcoral;
+      }
+      50% {
+        background-color: maroon;
+      }
+      100% {
+        background-color: darkblue;
+      }
+    }
+    .card-one video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+    .card-container {
+      flex-wrap: wrap;
+      margin-top: 50px;
+      /* background-color: aqua; */
+      display: flex;
+      width: 100%;
+      height: 500px;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .card-text {
+      /* background-color: blueviolet; */
+      height: 25vh;
+      text-align: left;
+      padding: 5px 5px;
+    }
+    .card-text .btn {
+      background-color: limegreen;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+    }
+    .card-two {
+      animation: slide 15s infinite;
+      height: 60vh;
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+      transition: 3s;
+    }
+    .card-two video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+    .card-three {
+      transition: 3s;
+      animation: slide 15s infinite;
+      height: 60vh;
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+    }
+    .card-one:hover {
+      box-shadow: 4px 4px 50px 4px black;
+    }
+    .card-two:hover {
+      box-shadow: 4px 4px 50px 4px black;
+    }
+    .card-three:hover {
+      box-shadow: 4px 4px 50px 4px black;
+    }
+    .card-three video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+  </style>
+  <body>
+    <video autoplay loop controls muted id="may-vi">
+      <source type="video/mp4" src="./videos/chuchuclass.mp4" />
+    </video>
+
+    <div class="card-container">
+      <div class="card-one">
+        <video loop src="./videos/chuchuclass.mp4"></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-two">
+        <video
+          id="video"
+          loop
+          src="./videos/Twinkle Twinkle _ More -- Top 20 Most Popular Nursery Rhymes Collection.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-three">
+        <video
+          id="video-three"
+          loop
+          src="./videos/HOW TO TEACH PHONICS TO YOUR CHILDREN THE FUN WAY - The Sounds of Alphabet.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script src="./lib/app.js"></script>
+  </body>
+</html>
