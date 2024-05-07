@@ -11,7 +11,7 @@
     }
     .card-one {
       animation: slide 15s infinite;
-      height: 60vh;
+      height: 355px;
       width: 20vw;
       border-radius: 20px;
       background-color: aqua;
@@ -46,10 +46,11 @@
     .card-container {
       flex-wrap: wrap;
       margin-top: 50px;
-      /* background-color: aqua; */
+      background-color: aqua;
       display: flex;
       width: 100%;
-      height: 500px;
+      padding: 30px 30px;
+      height: 150%;
       justify-content: space-around;
       align-items: center;
     }
@@ -69,7 +70,7 @@
     }
     .card-two {
       animation: slide 15s infinite;
-      height: 60vh;
+      height: 355px;
       width: 20vw;
       border-radius: 20px;
       background-color: aqua;
@@ -87,7 +88,7 @@
     .card-three {
       transition: 3s;
       animation: slide 15s infinite;
-      height: 60vh;
+      height: 355px;
       width: 20vw;
       border-radius: 20px;
       background-color: aqua;
@@ -110,6 +111,59 @@
       left: 0;
       width: 20vw;
     }
+    .card-four video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+    .card-four {
+      transition: 3s;
+      animation: slide 15s infinite;
+      height: 355px;
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+    }
+    .card-five video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+    .card-five {
+      transition: 3s;
+      animation: slide 15s infinite;
+      height: 355px;
+
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+    }
+    .card-six video {
+      position: relative;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      width: 20vw;
+    }
+    .card-six {
+      height: 355px;
+
+      transition: 3s;
+      animation: slide 15s infinite;
+      width: 20vw;
+      border-radius: 20px;
+      background-color: aqua;
+      padding: 15px 15px;
+      text-align: center;
+    }
   </style>
   <body>
     <video autoplay loop controls muted id="may-vi">
@@ -118,7 +172,7 @@
 
     <div class="card-container">
       <div class="card-one">
-        <video loop src="./videos/chuchuclass.mp4"></video>
+        <video controls src="./videos/chuchuclass.mp4"></video>
         <div class="card-text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
@@ -131,7 +185,7 @@
       <div class="card-two">
         <video
           id="video"
-          loop
+          controls
           src="./videos/Twinkle Twinkle _ More -- Top 20 Most Popular Nursery Rhymes Collection.mp4"
         ></video>
         <div class="card-text">
@@ -146,7 +200,49 @@
       <div class="card-three">
         <video
           id="video-three"
-          loop
+          controls
+          src="./videos/HOW TO TEACH PHONICS TO YOUR CHILDREN THE FUN WAY - The Sounds of Alphabet.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-four">
+        <video controls src="./videos/chuchuclass.mp4"></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-five">
+        <video
+          id="video"
+          controls
+          src="./videos/Twinkle Twinkle _ More -- Top 20 Most Popular Nursery Rhymes Collection.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-six">
+        <video
+          controls
           src="./videos/HOW TO TEACH PHONICS TO YOUR CHILDREN THE FUN WAY - The Sounds of Alphabet.mp4"
         ></video>
         <div class="card-text">
