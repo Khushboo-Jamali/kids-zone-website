@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./lib/bootstrap.min.js" /> -->
+  </head>
+  <style>
+   
+
+  </style>
+  <body>
+    <header></header>
+    <div class="nav">
+      <div class="icons">
+        <div class="box">
+          <a href=""> <i class="fa fa-user"></i>Login</a>
+          <a href=""> <i class="fa fa-heart-o"></i>Wishlist</a>
+        </div>
+
+        <div class="box">
+          <a href=""> <i class="fa fa-shopping-cart"></i>0</a>
+        </div>
+      </div>
+    </div>
+    <!-- ..................START LOGO SECTION................... -->
+    <section class="logo-section">
+      <img src="./images/kidz-zone-1.png" id="img-sec" />
+
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#">Toys For Girls </a></li>
+          <li><a href="#">Toys For Boys</a></li>
+          <li><a href="#">Baby Toys</a></li>
+          <li><a href="#">New Arrival</a></li>
+          <li><a href="#">Toys Under 999</a></li>
+          <li><a href="#">Gifts</a></li>
+        </ul>
+      </div>
+      <div class="nav-bar-icon">
+       
+       <div class="fa-div">
+        <i class="fa fa-bars" id="bar"></i>
+       </div>
+       <i class="fa fa-search"></i>
+      </div>
+    </section>
+    <!-- ...............START SIDE BAR ................. -->
+    <section class="sidebar-section">
+      
+      <div class="side-nav">
+        <ul>
+          <li><a href="#">Toys For Girls </a></li>
+          <li><a href="#">Toys For Boys</a></li>
+          <li><a href="#">Baby Toys</a></li>
+          <li><a href="#">New Arrival</a></li>
+          <li><a href="#">Toys Under 999</a></li>
+          <li><a href="#">Gifts</a></li>
+        </ul>
+    </section>
+    <!-- ...............END SIDE BAR ................. -->
+    <!-- ..................END LOGO SECTION................... -->
+
+
+    <!-- ...............START VIDEO CONTAINER ................. -->
+
+
+    <section class="video-play">
+      <video autoplay loop muted id="may-vi">
+        <source
+          type="video/mp4"
+          src="./videos/Main Tota Hare Rang Ka - Hindi Rhymes - मैं तोता मैं तोता - Hindi Rhymes For Kids - Baby Songs Hindi.mp4"
+        />
+      </video>
+      <div id="text">
+        <h2>Lorem ipsum dolor sit </h2>
+        <h3>Lorem, ipsum dolor.</h3>
+     
+        <button class="btn">
+          CONTACT US
+        </button>
+      </div>
+    </section>
+
+    <!-- ................END VIDEO CONTAINER ................. -->
+    <!-- ................START DOTTED CONTAINER ................. -->
+    <div class="dotted-cont">
+
+
+    </div>
+    <!-- ................END DOTTED CONTAINER ................. -->
+
+
+
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script>
+  $("#bar").click(function () {
+    $(".sidebar-section").slideToggle()
+    
+  });
+  $(".video-play").mousemove(function () {
+    $("#text").css({"display":"block"}).slideUp(3000)
+    
+  });
+  
+  
+
+  // $("#icon1").click(function () {
+  //   $(".container").css({"background-image":"url(./images/cute-bag.jpg)","transition":"1s"})
+    
+  // })
+  // $("#icon2").click(function () {
+  //   $(".container").css({"background-image":"url(./images/cute-girljpg.jpg)","transition":"1s"})
+    
+  // })
+    </script>
+  </body>
+</html>

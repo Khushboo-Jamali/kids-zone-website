@@ -4,400 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="./lib/nav.css" />
+    <link rel="stylesheet" href="./lib/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" href="./lib/bootstrap.min.js" /> -->
   </head>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      scroll-behavior: smooth;
-      box-sizing: border-box;
-      text-decoration: none;
-      list-style: none;
-    }
-    /* START NAV CSS  */
-    .nav {
-      align-items: center;
-      width: 100%;
-      height: 4vw;
-      background-color: #97c81e;
-    }
-    .nav .icons {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 100vw;
-      height: 8vh;
-      /* background-color: blueviolet; */
-    }
-    .nav .icons i {
-      padding: 5px;
-      color: white;
-      font-size: 1rem;
-    }
-    .nav .icons a {
-      font-size: 1rem;
-      color: white;
-    }
-    @media (max-width: 1204px) {
-      .nav .icons {
-        width: 100vw;
-        height: 4vw;
-        /* background-color: aqua; */
-        justify-content: space-around;
-      }
-    }
-    @media (max-width: 344px) {
-      .nav .icons {
-        height: 10vw;
-        /* background-color: aqua; */
-        justify-content: space-around;
-      }
-    }
-    @media (max-width: 726px) {
-      .nav .icons i {
-        font-size: 0.8rem;
-      }
-      .nav .icons a {
-        font-size: 0.7rem;
-      }
-    }
-    /* END NAV CSS  */
-    /* ............START LOGO SECTION............ */
-    .logo-section {
-      /* position:static;
-      top: 0;
-      left: 0; */
-      transition: 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-      align-items: center;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
-      padding-left: 20px;
-      padding-right: 30px;
-      display: flex;
-      background-color: #ffffff;
-      width: 100%;
-      height: 20vh;
-      justify-content: space-between;
-    }
-    .nav-bar-icon #bar{
-      font-size:1.9rem;
-      /* display: flex; */
-      cursor: pointer;
-    }
-    .nav-bar-icon .fa-div{
-      /* background-color: blueviolet; */
-      display: none;
-    }
-    .nav-bar-icon{
-      justify-content:right;
-      height: 35px ;
-      display: flex;
-       gap: 80px;
-      width: 15vw;
-    }
-    .nav-bar-icon .fa-search {
-      cursor: pointer;
-      color: #000;
-      padding: 8px;
-      background-color: rgba(0, 0, 0, 0);
-      font-size: 18px;
-    }
-    .nav-bar {
-      justify-content: center;
-      width: 55svw;
-      height: 5vh;
-      /* background-color: burlywood; */
-    }
-    .logo-section .nav-bar ul {
-      display: flex;
-      justify-content: space-around;
-    }
-    .logo-section .nav-bar ul li a {
-      color: black;
-      font-size: 16px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    .logo-section .nav-bar ul li a:hover {
-      color: #97c81e;
-    }
-    .logo-section #img-sec {
-      width: 10vw;
-      height: 15vh;
-    }
-    .sidebar-section {
-     background-color: #eeeeee;
-     padding-top: 10px;
-     padding-bottom: 10px;
-    position: absolute;
-      max-height: 954.641px;
-    top: 30%;
-    width: 100vw;
-    font-size: 1.1rem;
-    font-weight: 600;
-  
-    }
-    .side-nav ul li {
-      margin-top: 10px;
-      border-bottom: 1px solid #b3babd;
-      margin-right: 2%;
-    }
-    .side-nav ul li a{
-      color: #000;
-      transition: 1s;
-    }
-    .side-nav ul li a:hover{
-     color: #97c81e;
-
-    }
-    .sidebar-section{
-      display: none;
-    }
-    .sidebar-section .side-nav{
-      display: block;
-      margin-left: 20px;
-    }
-    @media (max-width:1114px) {
-      .nav-bar-icon .fa-div{
-        display: block;
-
-      }
-      .logo-section{
-        justify-content: space-around;
-      }
-      .logo-section .nav-bar{
-        display: none;
-      }
-      .nav-bar-icon{
-        justify-content: space-between;
-      }
-      .logo-section #img-sec{
-        width: 15vw;
-        height: 16vh;
-      }
-    }
- /* ............START LOGO SECTION............ */
-
- /* ...............START VIDEO CONTAINER ................. */
-
-
-
- /* .container{
-  width: 100vw;
-  height: 70vh;
-  background-image: url(./images/cute-girljpg.jpg);
-  background-size: 100% 100%;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  animation: slide 15s infinite;
-  
-} */
-/* @keyframes slide
-
-    {
-        0%{
-            
-            background-image: url(./images/baby-is-playing.avif);
-        }
-        10%{
-            background-image: url(./images/cute-bag.jpg);
-           
-        }
-        30%{
-            
-            background-image: url(./images/cute-girljpg.jpg);
-        }
-        50%{
-           
-            background-image: url(./images/kidz-zone-1.png);
-        }
-       100%{
-            
-            background-image: url(./images/baby-is-playing.avif)
-        }
-    } */
-    /* .container{
-      position: relative;
-      width: 90vw;
-      height: 100vh;
-      overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.8);
-      background-blend-mode: overlay;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-    } */
-    /* #may-vi {
-            width: 100vw;
-          height: 100%;
-  
-    }
-    .container{
-  width: 100vw;
-  height: 70vh;
-  background-size: 100% 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  background-color: #97c81e;
-  background-blend-mode: overlay;
-  overflow: hidden;
-  position: relative;
-  
-} */
-.video-play {
-      position: relative;
-      width: 100%;
-      height: 80vh;
-      overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.2);
-      background-blend-mode: overlay;
-    }
-    #may-vi {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 80vh;
-      object-fit: cover;
-      z-index: -1;
-    }
-    #text{
-      width: 30%;
-      height: 35vh;
-      /* background-color: #eeeeee; */
-      margin-top: 20%;
-      margin-left: 3%;
-      color: white;
-      display: none;
-      
-    }
-    .btn{
-      background-color: #97c81e;
-      border: 2px solid white;
-      color: white;
-      margin-top: 20px;
-      font-weight: 600;
-    }
-  .btn:hover{
-    background-color: #000;
-  }
-   
- /* ................END VIDEO CONTAINER .................  */
-
-  </style>
   <body>
-    <div class="nav">
-      <div class="icons">
-        <div class="box">
-          <a href=""> <i class="fa fa-user"></i>Login</a>
-          <a href=""> <i class="fa fa-heart-o"></i>Wishlist</a>
-        </div>
+    <header></header>
+    <script src="./lib/nav.js"></script>
 
-        <div class="box">
-          <a href=""> <i class="fa fa-shopping-cart"></i>0</a>
+    <!-- <video
+      src="./videos/Main Tota Hare Rang Ka - Hindi Rhymes - मैं तोता मैं तोता - Hindi Rhymes For Kids - Baby Songs Hindi.mp4"
+      id="may-vi"
+    ></video> -->
+
+    <div class="card-container">
+      <div class="card-one cards">
+        <video controls src="./videos/chuchuclass.mp4"></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-two cards">
+        <video
+          id="video"
+          controls
+          src="./videos/Twinkle Twinkle _ More -- Top 20 Most Popular Nursery Rhymes Collection.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
+      </div>
+
+      <div class="card-three cards">
+        <video
+          id="video-three"
+          controls
+          src="./videos/HOW TO TEACH PHONICS TO YOUR CHILDREN THE FUN WAY - The Sounds of Alphabet.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
         </div>
       </div>
     </div>
-    <!-- ..................START LOGO SECTION................... -->
-    <section class="logo-section">
-      <img src="./images/kidz-zone-1.png" id="img-sec" />
 
-      <div class="nav-bar">
-        <ul>
-          <li><a href="#">Toys For Girls </a></li>
-          <li><a href="#">Toys For Boys</a></li>
-          <li><a href="#">Baby Toys</a></li>
-          <li><a href="#">New Arrival</a></li>
-          <li><a href="#">Toys Under 999</a></li>
-          <li><a href="#">Gifts</a></li>
-        </ul>
+    <div class="card-container">
+      <div class="card-four cards">
+        <video controls src="./videos/chuchuclass.mp4"></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
       </div>
-      <div class="nav-bar-icon">
-       
-       <div class="fa-div">
-        <i class="fa fa-bars" id="bar"></i>
-       </div>
-       <i class="fa fa-search"></i>
+
+      <div class="card-five cards">
+        <video
+          id="video"
+          controls
+          src="./videos/Twinkle Twinkle _ More -- Top 20 Most Popular Nursery Rhymes Collection.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
       </div>
-    </section>
-    <!-- ...............START SIDE BAR ................. -->
-    <section class="sidebar-section">
-      
-      <div class="side-nav">
-        <ul>
-          <li><a href="#">Toys For Girls </a></li>
-          <li><a href="#">Toys For Boys</a></li>
-          <li><a href="#">Baby Toys</a></li>
-          <li><a href="#">New Arrival</a></li>
-          <li><a href="#">Toys Under 999</a></li>
-          <li><a href="#">Gifts</a></li>
-        </ul>
-    </section>
-    <!-- ...............END SIDE BAR ................. -->
-    <!-- ..................END LOGO SECTION................... -->
 
-
-    <!-- ...............START VIDEO CONTAINER ................. -->
-
-
-    <section class="video-play">
-      <video autoplay loop muted id="may-vi">
-        <source
-          type="video/mp4"
-          src="./videos/Main Tota Hare Rang Ka - Hindi Rhymes - मैं तोता मैं तोता - Hindi Rhymes For Kids - Baby Songs Hindi.mp4"
-        />
-      </video>
-      <div id="text">
-        <h2>Lorem ipsum dolor sit </h2>
-        <h3>Lorem, ipsum dolor.</h3>
-     
-        <button class="btn">
-          CONTACT US
-        </button>
+      <div class="card-six cards">
+        <video
+          controls
+          src="./videos/HOW TO TEACH PHONICS TO YOUR CHILDREN THE FUN WAY - The Sounds of Alphabet.mp4"
+        ></video>
+        <div class="card-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            provident! Lorem ipsum dolor sit amet.
+          </p>
+          <button class="btn">Watch More</button>
+        </div>
       </div>
-    </section>
-
-    <!-- ................END VIDEO CONTAINER ................. -->
-    <!-- ................START DOTTED CONTAINER ................. -->
-    <div class="dotted-cont">
-
-
     </div>
-    <!-- ................END DOTTED CONTAINER ................. -->
-
-
 
     <script src="./lib/jquery-3.7.1.min.js"></script>
-    <script>
-  $("#bar").click(function () {
-    $(".sidebar-section").slideToggle()
-    
-  });
-  $(".video-play").mousemove(function () {
-    $("#text").css({"display":"block"}).slideUp(3000)
-    
-  });
-  
-  
 
-  // $("#icon1").click(function () {
-  //   $(".container").css({"background-image":"url(./images/cute-bag.jpg)","transition":"1s"})
-    
-  // })
-  // $("#icon2").click(function () {
-  //   $(".container").css({"background-image":"url(./images/cute-girljpg.jpg)","transition":"1s"})
-    
-  // })
+    <script src="./lib/app.js"></script>
+
+    <script>
+      $("#bar").click(function () {
+        $(".sidebar-section").slideToggle();
+      });
+      $(".video-play").mousemove(function () {
+        $("#text")
+          .css({ display: "block", position: "absolute", left: "0", top: "0" })
+          .slideUp(3000);
+      });
     </script>
   </body>
 </html>
